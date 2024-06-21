@@ -61,7 +61,7 @@ document
   .getElementById('encryptionForm')
   .addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent form submission
-    const originalMessage = document.getElementById('originalMessage').value;
+    const originalMessage = document.getElementById('messageInput').value;
     const encryptedMessage = encryptMessage(originalMessage);
     document.getElementById('encryptedMessage').textContent =
       'Encrypted message: ' + encryptedMessage;

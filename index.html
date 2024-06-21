@@ -7,24 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Caesar Cipher Encryption/Decryption</h1>
+
+<div class="container">
+  <h1>Caesar Cipher</h1>
 
   <form id="encryptionForm">
-    <label for="originalMessage">Enter Message to Encrypt:</label>
-    <input type="text" id="originalMessage" name="originalMessage" required>
+    <label for="messageInput">Enter message:</label>
+    <input type="text" id="messageInput" required>
     <button type="submit">Encrypt</button>
   </form>
 
-  <div id="encryptedMessage"></div>
-
   <form id="decryptionForm">
-    <label for="encryptedMessageInput">Enter Message to Decrypt:</label>
-    <input type="text" id="encryptedMessageInput" name="encryptedMessageInput" required>
+    <label for="encryptedMessageInput">Enter encrypted message:</label>
+    <input type="text" id="encryptedMessageInput" required>
     <button type="submit">Decrypt</button>
   </form>
 
-  <div id="decryptedMessage"></div>
+  <div>
+    <p id="encryptedMessage">Encrypted message will appear here</p>
+    <p id="decryptedMessage">Decrypted message will appear here</p>
+  </div>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
