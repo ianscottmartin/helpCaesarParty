@@ -1,29 +1,77 @@
 body {
     font-family: papyrus, Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
     background-color: #631373;
-    /* background-image: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 30%, #FF99AC 100%); */
     background-attachment: fixed;
     background-size: cover;
 }
 
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #4e2c6e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar form {
+    margin-bottom: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c4eb45;
+}
+
+.sidebar input {
+    background-color: #c4eb45;
+}
+
+.sidebar input[type="text"],
+.sidebar input[type="password"],
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sidebar button {
+    background-color: #5548a3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #39bed8;
+}
+
 .container {
     max-width: 800px;
-    /* Increased max-width for a larger container */
     margin: 40px auto;
     padding: 30px;
-    /* Increased padding */
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #b21919;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     min-height: 400px;
-    /* Added minimum height for larger vertical size */
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: whitesmoke;
 }
 
 form {
@@ -33,13 +81,12 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #c4eb45;
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    /* Increased padding */
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -48,14 +95,12 @@ input[type="text"] {
 
 button {
     padding: 12px 18px;
-    /* Increased padding */
     background-color: #5548a3;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    /* Increased font size */
 }
 
 button:hover {
@@ -77,12 +122,17 @@ button:hover {
     color: #333;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .container {
+        margin: 20px auto;
         padding: 15px;
         min-height: 300px;
-        /* Adjusted minimum height for smaller screens */
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 
     input[type="text"],
