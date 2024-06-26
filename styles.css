@@ -119,7 +119,7 @@ button:hover {
 #decryptedMessage {
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
+    color: #c4eb45;
 }
 
 @media (max-width: 768px) {
