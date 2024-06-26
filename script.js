@@ -47,8 +47,9 @@ function decryptMessage(encryptedMessage) {
   const shiftValue = 42;
   let decryptedMessage = '';
 
-  for (let i = 0; i < encryptedMessage.length; i++) {
-    if ((i + 1) % 3 === 0) {
+  // Start from the second character to skip the random initial letter added during encryption
+  for (let i = 1; i < encryptedMessage.length; i++) {
+    if ((i - 1) % 3 === 0) {
       continue; // Skip the random letters added during encryption
     }
     decryptedMessage += caesarCipher(encryptedMessage[i], shiftValue, false);
@@ -89,5 +90,3 @@ document.getElementById('resetButton').addEventListener('click', function () {
   document.getElementById('decryptedMessage').textContent =
     'Decrypted message will appear here';
 });
-// decrypt secret message
-// Iueuan jrxuq cjythdykwxaj mixkqtaeml ebv wHenckvbkei rqdmt fHukckvi.r Jbxuihus, tmxayiwfuxh sjxau amenhtv 'zQkhhuubyjkit' yjew jhxux mxydatij. zJxmu hvymhihj ajel kldlsuyjb dyju yid uekdh qIbkqsxa xsxqqdvduzb wuqzhdoi qjxwu waueo xjem jfxuy dpuntj dgkvuiwj.
