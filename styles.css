@@ -34,24 +34,24 @@ body {
 }
 
 .sidebar input {
-    background-color: #c4eb45;
-}
-
-.sidebar input[type="text"],
-.sidebar input[type="password"],
-.sidebar button {
-    width: 100%;
+    width: calc(100% - 22px);
+    /* Adjust for padding and border */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #c4eb45;
 }
 
 .sidebar button {
+    width: 100%;
+    padding: 12px 18px;
     background-color: #5548a3;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .sidebar button:hover {
@@ -133,11 +133,26 @@ button:hover {
         width: 100%;
         height: auto;
         position: relative;
+        padding: 15px;
+        /* Adjust padding for smaller screens */
     }
 
-    input[type="text"],
-    button {
-        padding: 10px;
+    .sidebar h2 {
+        font-size: 18px;
+        /* Reduce font size for headings */
+    }
+
+    .sidebar form {
+        margin-bottom: 15px;
+        /* Adjust form margin */
+    }
+
+    .sidebar input[type="text"],
+    .sidebar input[type="password"],
+    .sidebar button {
+        padding: 8px;
+        /* Adjust input and button padding */
         font-size: 14px;
+        /* Reduce font size for inputs and buttons */
     }
 }
