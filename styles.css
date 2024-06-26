@@ -1,7 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: papyrus, Arial, sans-serif;
     margin: 20px;
-    background-color: rgb(234, 132, 60);
+    background-color: #631373;
+    /* background-image: linear-gradient(135deg, #FF9A8B 0%, #FF6A88 30%, #FF99AC 100%); */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    /* Increased max-width for a larger container */
+    margin: 40px auto;
+    padding: 30px;
+    /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #b21919;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+    /* Added minimum height for larger vertical size */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
 }
 
 form {
@@ -11,52 +33,61 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
 input[type="text"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    /* Increased padding */
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: rgb(74, 188, 188);
+    background-color: #c4eb45;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 12px 18px;
+    /* Increased padding */
     background-color: #5548a3;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    /* Increased font size */
 }
 
 button:hover {
     background-color: #39bed8;
 }
 
+#resetButton {
+    background-color: #ff6f61;
+}
+
+#resetButton:hover {
+    background-color: #ff3f31;
+}
+
 #encryptedMessage,
 #decryptedMessage {
     margin-top: 10px;
     font-weight: bold;
+    color: #333;
 }
-
-
-/* General styles
-
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .container {
-        padding: 10px;
-        /* Reduce padding for smaller screens */
+        padding: 15px;
+        min-height: 300px;
+        /* Adjusted minimum height for smaller screens */
     }
 
     input[type="text"],
     button {
-        padding: 8px;
-        /* Reduce padding for smaller inputs and buttons */
+        padding: 10px;
         font-size: 14px;
-        /* Decrease font size for smaller screens */
     }
 }

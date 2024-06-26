@@ -80,5 +80,12 @@ document
       'Decrypted message: ' + decryptedMessage;
   });
 
-// decrypt secret message
-// Iueuan jrxuq cjythdykwxaj mixkqtaeml ebv wHenckvbkei rqdmt fHukckvi.r Jbxuihus, tmxayiwfuxh sjxau amenhtv 'zQkhhuubyjkit' yjew jhxux mxydatij. zJxmu hvymhihj ajel kldlsuyjb dyju yid uekdh qIbkqsxa xsxqqdvduzb wuqzhdoi qjxwu waueo xjem jfxuy dpuntj dgkvuiwj.
+// Handle reset button click
+document.getElementById('resetButton').addEventListener('click', function () {
+  document.getElementById('messageInput').value = '';
+  document.getElementById('encryptedMessageInput').value = '';
+  document.getElementById('encryptedMessage').textContent =
+    'Encrypted message will appear here';
+  document.getElementById('decryptedMessage').textContent =
+    'Decrypted message will appear here';
+});
