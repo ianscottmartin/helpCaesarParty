@@ -25,15 +25,15 @@ function caesarCipher(singleCharacter, shiftValue, isEncrypting) {
     return singleCharacter; // Non-alphabetic characters remain unchanged
   }
 
-  shiftValue = shiftValue % 26; // Adjust the shift to be within the range of 0-25
+  shiftAmount = shiftValue % 26; // Adjust the shift to be within the range of 0-25
 
   // Apply encryption or decryption
   let adjustedCharCode;
   if (isEncrypting) {
-    adjustedCharCode = ((charCode - baseCode + shiftValue) % 26) + baseCode;
+    adjustedCharCode = ((charCode - baseCode + shiftAmount) % 26) + baseCode;
   } else {
     adjustedCharCode =
-      ((charCode - baseCode - shiftValue + 26) % 26) + baseCode;
+      ((charCode - baseCode - shiftAmount + 26) % 26) + baseCode;
   }
 
   return String.fromCharCode(adjustedCharCode);
